@@ -26,45 +26,54 @@
     </div>
 
     <div id="about">
-      <div class="conatiner">
+      <div class="container">
         <div class="ROW">
           <div class="about_col_1">
             <img src="images/image2.png" />
           </div>
           <div class="about_col_2">
             <h1 class="title_1">About Me</h1>
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
-               Autem quo nesciunt nisi voluptatem hic officiis minus,<br>
-                provident excepturi. Dolorem, saepe.</p>
-          
-             <div class="title_2">
-                <p class="title_2_links active_link">Skills</p>
-                <p class="title_2_links">Experience</p>
-                <p class="title_2_links">Education</p>
-             </div>
-             <div class="title_contents active_1">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Autem quo nesciunt nisi voluptatem hic officiis minus,<br />
+              provident excepturi. Dolorem, saepe.
+            </p>
+
+            <div class="title_2">
+              <p class="title_2_links active_link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="title_2_links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="title_2_links" onclick="opentab('education')">
+                Education
+              </p>
+            </div>
+            <div class="title_contents active_1" id="skills">
               <ul>
-                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                <li><span>Web Development</span><br>Web App interfaces</li>
-                <li><span>App Development</span><br>Building Andriod/IOS apps</li>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web App interfaces</li>
+                <li>
+                  <span>App Development</span><br />Building Andriod/IOS apps
+                </li>
               </ul>
-             </div>
-             <div class="title_contents active_2">
+            </div>
+            <div class="title_contents" id="experience">
               <ul>
-                <li><span>1-10th</span><br>Good</li>
-                <li><span>10th-12th</span><br>Good</li>
-                <li><span>12-Engg</span><br>Good</li>
+                <li><span>1-10th</span><br />Good</li>
+                <li><span>10th-12th</span><br />Good</li>
+                <li><span>12-Engg</span><br />Good</li>
               </ul>
-             </div>
-             <div class="title_contents active_3">
+            </div>
+            <div class="title_contents" id="education">
               <ul>
-                <li><span>2020</span><br>Completed 10th</li>
-                <li><span>2022</span><br>Completed 12th</li>
-                <li><span>2022-2026</span><br>Still Studying</li>
+                <li><span>2020</span><br />Completed 10th</li>
+                <li><span>2022</span><br />Completed 12th</li>
+                <li><span>2022-2026</span><br />Still Studying</li>
               </ul>
-             </div>
-            
-         </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
