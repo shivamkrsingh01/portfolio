@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/8b902bd031.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="header">
       <div class="container">
         <nav>
           <img src="images/shivamlogo 2.png" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header_text">
@@ -77,6 +79,96 @@
         </div>
       </div>
     </div>
+  <div id="project">
+    <div class="container">
+      <h1 class="title_1">My Project</h1>
+      <div class="project_list">
+        <div>
+          <i class="fa-solid fa-person-rifle"></i>
+          <h2>Portfolio</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptates dolore nesciunt labore quisquam animi.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-apple"></i>
+          <h2>Apple clone</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptates dolore nesciunt labore quisquam animi.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-palette"></i>
+          <h2>Color Switcher</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptates dolore nesciunt labore quisquam animi.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="title_1">My Work</h1>
+      <div class="work_list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos quae dicta quasi quibusdam ea placeat neque sint.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos quae dicta quasi quibusdam ea placeat neque sint.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Shopping App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos quae dicta quasi quibusdam ea placeat neque sint.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+   <div id="contact">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact_1">
+      <div class="content_1_title">
+        <h2 class="title_1">Contact Me</h2>
+        <hr>
+      </div>
+      <input type="hidden" name="access_key" value="d873d2ff-4329-408a-bf13-8da4162fa78f">
+      <input type="text" name="name" placeholder="Your Name..." class="contact_inputs" required>
+      <input type="phone no" name="phone no" placeholder="Phone No..." class="contact_inputs" required>
+      <input type="email" name="email" placeholder="Your Email..." class="contact_inputs" required>
+      <textarea name="message" placeholder="Your Message.." id="Your Message" class="contact_inputs" required></textarea>
+      <button type="submit">Submit <img src="images/arrow_icon.png"></button>
+    </form>
+  </div> 
+
+  <div id="details">
+    <div class="container">
+      <div class="details_1">
+        <h1>More Details</h1>
+        <p><i class="fa-solid fa-envelope"></i> shivam00krsingh@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 7004637728</p>
+        <div class="social_icons">
+          <a href="https://www.facebook.com/profile.php?id=100041120255106"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/__s.h.i.v.a.m_s.i.n.g.h__?igsh=MWg0d243M2IxcWQ0aA=="><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/shivam-kumar-b525a21a7"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://x.com/Shivam_kr01?t=LGAtbcihUo1R7y4K_vJs-Q&s=09"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <a href="images/resume/" download class="btn btn2">Download Resume</a>
+      </div>
+    </div>
+  </div>
 
     <script src="script.js"></script>
   </body>
