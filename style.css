@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,37 +15,45 @@
   }
   
   #header {
-    width: 68%;
-    height: 110vh;
+    width: 70vw;
+    height:100vh;
     background-image: url(images/image2.png);
     background-size: cover;
     background-position: center;
-    transform: translateX(40%);
+    transform: translateX(40%);  
    
   }
   
   .container {
-    padding: 10px 10%;
+    padding: 10px 9%;
   }
   
   nav {
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+     flex-wrap: wrap; 
   }
   
-  .logo {
-    width: 160px;
-    height: 60px;
-    transform: translateX(-150%);
-  }
+ nav>h1{
+  font-size: 4vw;
+  font-weight: 400;
+  margin-left: -25vw;
+  display: flex;
+  justify-content: center; 
+  padding: 4%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
   
   nav ul li {
     display: inline-block;
-    list-style: none;
-    margin: 15px;
-    transform: translateX(180%);
+    gap:6vw; 
+    justify-content: space-between;
+    margin-left: 2.5vw; 
+    font-weight: 300;
+    position:relative;
   }
   
   nav ul li a {
@@ -53,7 +63,7 @@
   }
   
   nav ul li a::after {
-    content: "";
+    content: '';
     width: 0%;
     height: 3px;
     background: rgb(235, 37, 11);
@@ -68,9 +78,9 @@
   }
   
   .header_text {
-    margin-top: 60%;
+    margin-top: 50%;
     font-size: 25px;
-    transform: translateX(-30%);
+    transform: translateX(-40%);
   }
   
   .header_text > h1 {
@@ -364,3 +374,81 @@
 nav .fa-solid{
   display: none;
 }
+
+
+@media only screen and (max-width: 600px) {
+  
+  #header{
+    height: 90%;
+    width: 72vw;
+   
+  } 
+  nav .fa-solid {
+      display: block;
+      font-size: 25px;
+  }
+  nav ul {
+      background: #920a37;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.6s ease;
+  }
+  nav ul li {
+      display: block;
+      margin: 25px;
+  }
+  nav ul .fa-solid {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+  }
+  .header_text {
+      margin-top: 100%;
+      font-size: 16px;
+  }
+  .header_text h1 {
+      font-size: 30px;
+  }
+  .about_col_1 img {
+      width: 100%;
+      height: auto;
+      transform: translateX(-25%);
+  }
+  .contact_inputs {
+      width: 80vw;
+  }
+  #about{
+    margin-right: 5vw;
+    transform: translateX(-0%);
+    margin-right: 2vw;
+  }
+  .title_1{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  
+  .header_text {
+      margin-top: 120%;
+      font-size: 14px;
+  }
+  .header_text h1 {
+      font-size: 24px;
+  }
+  .contact_inputs {
+      width: 90vw;
+  }
+} 
+
