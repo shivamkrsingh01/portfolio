@@ -11,3 +11,13 @@ function opentab(titlename) {
   -event.currentTarget.classList.add("active_link");
   document.getElementById(titlename).classList.add("active_1");
 }
+
+let menu = document.getElementById("sidemenu");
+
+function openmenu(){
+  menu.style.right= "0";
+}
+
+function closemenu(){
+  menu.style.right= "-200px";
+}
